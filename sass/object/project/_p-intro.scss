@@ -1,0 +1,38 @@
+/* introduction project */
+
+.p-intro {
+  text-align: center;
+
+  &__text {
+    display: inline-block;
+    text-align: left;
+  }
+
+  &__button {
+    &.-view {
+      font-size: 2rem;
+    }
+  }
+  & &__cardBox {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1024px;
+    margin: 0 auto;
+    @include media(sp) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    & .p-intro__card {
+      max-width: 20rem;
+      width: calc(100% / 3);
+      margin: 0;
+      @include media(sp) {
+        margin-top: 4rem;
+        width: 70%;
+      }
+    }
+  }
+}
+
+
