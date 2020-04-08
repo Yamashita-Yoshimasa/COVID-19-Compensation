@@ -6,9 +6,9 @@ handlers:
   - url: /static
     static_dir: build/static
 
-  - url: /(.*\.(json|ico|js|css|png))$
+  - url: /(.*\.(json|ico|js|css|png|svg|tff|woff|woff2|eot))$
     static_files: build/\1
-    upload: build/.*\.(json|ico|js|css|png)$
+    upload: build/.*\.(json|ico|js|css|png|svg|tff|woff|woff2|eot)$
 
   - url: /.*
     static_files: build/index.html
