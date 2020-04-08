@@ -4,6 +4,7 @@ $breakpoints: (
   "sp": "(max-width: 767px)",
   "tab": "(max-width: #{$layout-width-inner - 1px})",
   "pc": "(max-width: #{$layout-width-inner})",
+  "sp-min":"(min-width: 768px)",
 );
 
 @mixin media($breakpoint) {

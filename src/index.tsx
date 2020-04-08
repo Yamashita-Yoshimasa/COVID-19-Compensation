@@ -5,11 +5,13 @@ import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 ReactDOM.render(
   <BrowserRouter>
     <Header />
     <App />
+    <Footer />
   </BrowserRouter>,
   document.getElementById('root'),
 );

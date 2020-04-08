@@ -22,25 +22,17 @@ const Header: FC<{}> = () => {
     maxWidth: '1072px',
   };
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <AppBar color="primary" position="static">
         <div className="l-barWidth" style={style}>
           <Toolbar variant="dense">
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="menu"
-            >
-              <MenuIcon />
-            </IconButton>
             <Typography variant="h6" color="inherit">
-              COVID-19 compensation
+              COVID-19 Compensation
             </Typography>
           </Toolbar>
         </div>
       </AppBar>
-    </div>
+    </section>
   );
 };
 
