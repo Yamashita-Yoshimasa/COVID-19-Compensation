@@ -3,9 +3,6 @@ steps:
     args: ['install']
 
   - name: 'gcr.io/cloud-builders/yarn'
-    args: ["eslint 'src/**/*.{js,jsx,ts,tsx}'; stylelint 'src/**/*.css'"]
-
-  - name: 'gcr.io/cloud-builders/yarn'
     args: ['build']
 
   - name: 'gcr.io/cloud-builders/gcloud'

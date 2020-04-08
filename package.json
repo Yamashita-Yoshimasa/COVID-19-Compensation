@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'; stylelint 'src/**/*.css'",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'; stylelint 'public/**/*.css'",
     "sass": "gulp sass:watch"
   },
   "eslintConfig": {
@@ -78,7 +78,7 @@
       "eslint --fix",
       "git add"
     ],
-    "src/**/*.css": [
+    "public/**/*.css": [
       "stylelint --fix",
       "git add"
     ]
