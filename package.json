@@ -32,7 +32,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'; stylelint 'public/**/*.css'",
     "sass": "gulp sass:watch"
   },
@@ -67,20 +66,5 @@
     "stylelint-config-prettier": "^8.0.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-order": "^3.1.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ],
-    "public/**/*.css": [
-      "stylelint --fix",
-      "git add"
-    ]
   }
 }

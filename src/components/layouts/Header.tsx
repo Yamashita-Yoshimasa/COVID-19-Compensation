@@ -19,6 +19,7 @@ const Header: FC<{}> = () => {
   const style = {
     maxWidth: '1072px',
   };
+
   return (
     <section className={classes.root}>
       <AppBar color="primary" position="static">

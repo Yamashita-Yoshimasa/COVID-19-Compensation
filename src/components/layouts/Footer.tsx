@@ -6,9 +6,9 @@ const Footer: FC<{}> = () => (
       <p className="p-footer__title">COVID-19 Compensation</p>
       <div className="p-footer__fonts">
         <a href="https://twitter.com/Tapi_tapirus">
-          <i className="fab fa-twitter-square p-footer__twitter"></i>
+          <i className="fab fa-twitter-square p-footer__twitter" />
         </a>
-        <p className="p-skill__text"></p>
+        <p className="p-skill__text" />
       </div>
       <p className="p-footer__copy">
         <small>©︎ 2019 COVID-19.yamabaku.work</small>

@@ -1,10 +1,12 @@
 import React, { FC } from 'react';
 import { Redirect, Route, Switch } from 'react-router';
-import Introduction from './components/Introduction';
+import Introduction from 'components/Introduction/Introduction';
+import Subsidy from 'components/SubsidyList/Subsidy';
 
 const App: FC<{}> = () => (
   <Switch>
-    <Route path="/" component={Introduction} />
+    <Route exact path="/" component={Introduction} />
+    <Route exact path="/Employees" component={Subsidy} />
     <Redirect to="/" />;
   </Switch>
 );

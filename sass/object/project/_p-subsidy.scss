@@ -1,0 +1,11 @@
+.p-subsidy {
+  &__jobBox {
+    display: flex;
+  }
+
+  &__jobImage {
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+  }
+}

@@ -1,10 +1,10 @@
 /* breakpoints */
 $layout-width-inner: 1024px;
 $breakpoints: (
-  "sp": "(max-width: 767px)",
+  "sp": "(max-width: 1000px)",
   "tab": "(max-width: #{$layout-width-inner - 1px})",
   "pc": "(max-width: #{$layout-width-inner})",
-  "sp-min":"(min-width: 768px)",
+  "tab-min":"(min-width: 1001px)",
 );
 
 @mixin media($breakpoint) {
