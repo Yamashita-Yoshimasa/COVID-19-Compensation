@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Redirect, Route, Switch } from 'react-router';
-import Introduction from 'components/Introduction/Introduction';
+import Introduction from 'components/Home/Introduction';
 import Subsidy from 'components/SubsidyList/Subsidy';
 
 const App: FC<{}> = () => (
