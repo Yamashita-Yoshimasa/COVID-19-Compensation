@@ -1,26 +1,27 @@
 import React, { FC } from 'react';
-// import { SubsidyList } from 'components/SubsidyList/SubsidyData';
+import { RouteComponentProps, withRouter } from 'react-router';
+import { Redirect } from 'react-router-dom';
 
-interface SubsidyProps {
-  image: string;
-  job: string;
-  // subsidylist: SubsidyData[];
-}
+import { SubsidyData } from 'components/SubsidyList/SubsidyData';
+import SubsidyLayout from 'components/SubsidyList/SubsidyLayout';
 
-const Subsidy: FC<SubsidyProps> = ({ image, job }) => (
-  <>
-    <div className="l-subsidy">
-      <div className="p-subsidy">
-        <div className="p-subsidy__jobBox">
-          <div
-            className="p-subsidy__jobImage"
-            style={{ backgroundImage: `url(${image})` }}
-          />
-          <p className="p-subsidy__jobName">{job}</p>
-        </div>
-      </div>
-    </div>
-  </>
-);
+type SubsidyProps = {} & RouteComponentProps<{ code: string }>;
 
-export default Subsidy;
+const Subsidy: FC<SubsidyProps> = ({ match }) => {
+  const codes = Object.keys(SubsidyData);
+  const targetCode = match.params.code;
+
+  return codes.includes(targetCode) ? (
+    <>
+      <SubsidyLayout
+        image={SubsidyData[targetCode].image}
+        job={SubsidyData[targetCode].job}
+        subsidylist={SubsidyData[targetCode].subsidylist}
+      />
+    </>
+  ) : (
+    <Redirect to="/" />
+  );
+};
+
+export default withRouter(Subsidy);

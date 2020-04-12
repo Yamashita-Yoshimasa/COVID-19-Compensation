@@ -20,7 +20,11 @@ const Introduction: FC<{}> = () => (
       </Message>
       <div className="p-intro__cardBox">
         {JobData.job.map(item => (
-          <Link to={`/${item.name}`} className="p-intro__link" key={item.id}>
+          <Link
+            to={`/subsidy/${item.name}`}
+            className="p-intro__link"
+            key={item.id}
+          >
             <Card className="p-intro__card">
               <Image src={item.image} wrapped ui={false} />
               <Card.Content>
