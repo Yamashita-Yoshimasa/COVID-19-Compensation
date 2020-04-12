@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-// import { SubsidyList } from 'components/SubsidyList/SubsidyList';
+// import { SubsidyList } from 'components/SubsidyList/SubsidyData';
 
 interface SubsidyProps {
   image: string;
   job: string;
-  // subsidylist: SubsidyList[];
+  // subsidylist: SubsidyData[];
 }
 
 const Subsidy: FC<SubsidyProps> = ({ image, job }) => (

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { Message, Card, Image } from 'semantic-ui-react';
-import { JobData } from 'components/Introduction/JobList';
+import { JobData } from 'components/Home/JobList';
 
 const Introduction: FC<{}> = () => (
   <div className="l-intro">
