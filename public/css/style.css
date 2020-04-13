@@ -285,6 +285,10 @@ li {
   margin-top: 24px;
 }
 
+.p-subsidy__title {
+  margin-top: 20px;
+}
+
 .p-subsidy__title.-view {
   font-size: 20px;
 }
