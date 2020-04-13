@@ -1,7 +1,6 @@
 /**
  *   Founsdation
  * ======================== */
-
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
@@ -19,13 +18,13 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-  background: transparent;
-  border: 0;
-  font-size: 100%;
   margin: 0;
-  outline: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
   vertical-align: baseline;
+  background: transparent;
 }
 
 body {
@@ -45,18 +44,18 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none;
 }
 
 a {
-  background: transparent;
-  font-size: 100%;
   margin: 0;
   padding: 0;
+  font-size: 100%;
   vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
@@ -90,10 +89,10 @@ table {
 
 /* change border colour to suit your needs */
 hr {
-  border: 0;
-  border-top: 1px solid #ccc;
   display: block;
   height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -115,8 +114,8 @@ html {
 
 body {
   font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -128,11 +127,9 @@ li {
 }
 
 /* breakpoints */
-
 /**
  *   Laysout
  * ======================== */
-
 /* bar-width layout */
 .l-barWidth {
   margin: 0 auto;
@@ -140,18 +137,11 @@ li {
 }
 
 /* footer layout */
-
 /* MY SKILL */
 .l-footer {
   background-color: #3b3d40;
   font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
   padding: 64px 30px 30px 30px;
-}
-
-@media (max-width: 1000px) {
-  .l-footer {
-    margin-top: 40px;
-  }
 }
 
 @media (min-width: 1001px) {
@@ -160,16 +150,23 @@ li {
   }
 }
 
+@media (max-width: 1000px) {
+  .l-intro {
+    margin-bottom: 40px;
+  }
+}
+
+.l-subsidy {
+  height: calc(100vh - 261.5px);
+}
+
 /**
  *   Object1
  * ======================= */
-
 /* Conponent -------------- */
-
 /* Project -------------- */
-
 /* footer */
-.p-footer {
+.p-footer.-view {
   color: #fff;
   font-size: 1.25rem;
   text-align: center;
@@ -180,13 +177,13 @@ li {
   font-size: 2.4rem;
 }
 
-.p-footer__twitter--text {
+.p-footer__twitter--text.-view {
   color: #fff;
   font-size: 1.2rem;
   margin-top: 5px;
 }
 
-.p-footer__copy {
+.p-footer__copy.-view {
   font-size: 1.2rem;
   margin-top: 20px;
   opacity: 0.5;
@@ -210,15 +207,15 @@ li {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
   max-width: 1024px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
   .p-intro .p-intro__cardBox {
+    margin-top: 40px;
     flex-direction: column;
     justify-content: center;
-    margin-top: 40px;
   }
 }
 
@@ -242,7 +239,6 @@ li {
   .p-intro__link {
     width: 70%;
   }
-
   .p-intro__link:not(:first-child) {
     margin-top: 40px;
   }
@@ -254,14 +250,55 @@ li {
   }
 }
 
+.p-subsidy {
+  text-align: center;
+}
+
+.p-subsidy__wrapper {
+  display: inline-block;
+}
+
 .p-subsidy__jobBox {
+  align-items: center;
   display: flex;
+  margin-top: 24px;
 }
 
 .p-subsidy__jobImage {
+  height: 60px;
+  width: 60px;
+}
+
+.p-subsidy__jobImage.-view {
   background-size: contain;
-  height: 50px;
-  width: 50px;
+}
+
+.p-subsidy__jobName {
+  margin-left: 5px;
+}
+
+.p-subsidy__jobName.-view {
+  font-size: 18px;
+}
+
+.p-subsidy__box {
+  margin-top: 24px;
+}
+
+.p-subsidy__title.-view {
+  font-size: 20px;
+}
+
+.p-subsidy__item {
+  margin: 20px auto 0 auto;
+  padding: 24px 0;
+  width: 320px;
+}
+
+.p-subsidy__item.-view {
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 18px;
 }
 
 /* Utillity -------------- */
