@@ -79,8 +79,8 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
               basic
               size="small"
             >
-              <Header icon="browser" content="Cookies policy" />
-              <Modal.Content>aaaaaaa</Modal.Content>
+              <Header icon="browser" content={item.name} />
+              <Modal.Content>{item.name}</Modal.Content>
               <Modal.Actions>
                 <Button
                   color="green"
