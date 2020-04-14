@@ -213,15 +213,15 @@ li {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  max-width: 1024px;
   margin: 0 auto;
+  max-width: 1024px;
 }
 
 @media (max-width: 1000px) {
   .p-intro .p-intro__cardBox {
-    margin-top: 40px;
     flex-direction: column;
     justify-content: center;
+    margin-top: 40px;
   }
 }
 
@@ -250,7 +250,7 @@ li {
   }
 }
 
-@media (min-width: 1001px) and (max-width: 1440px) {
+@media (min-width: 320px) and (max-width: 1440px) {
   .p-intro__link {
     max-width: 220px;
   }
