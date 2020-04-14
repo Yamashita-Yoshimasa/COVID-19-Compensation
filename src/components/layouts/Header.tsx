@@ -26,7 +26,12 @@ const Header: FC<{}> = () => {
         <div className="l-barWidth" style={style}>
           <Toolbar variant="dense">
             <Typography variant="h6" color="inherit">
-              COVID-19 Compensation
+              <a
+                className="p-header__link -view"
+                href="https://covid-19.yamabaku.work"
+              >
+                COVID-19 Subsidies
+              </a>
             </Typography>
           </Toolbar>
         </div>

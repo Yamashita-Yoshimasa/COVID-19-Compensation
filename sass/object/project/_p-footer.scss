@@ -28,9 +28,10 @@
     }
   }
 
-  &__smallLink{
+  &__link{
     &.-view {
       color: #fff;
+      font-weight: 500;
     }
   }
 }
