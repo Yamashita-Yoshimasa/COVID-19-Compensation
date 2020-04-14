@@ -17,9 +17,9 @@ export const JobData: JobList = {
   job: [
     {
       id: 1,
-      name: 'Employee',
-      image: EmployeeImage,
-      description: '会社員の方はこちら',
+      name: 'Employer',
+      image: EmployerImage,
+      description: '事業主の方はこちら',
     },
     {
       id: 2,
@@ -29,9 +29,9 @@ export const JobData: JobList = {
     },
     {
       id: 3,
-      name: 'Employer',
-      image: EmployerImage,
-      description: '雇用主の方はこちら',
+      name: 'Employee',
+      image: EmployeeImage,
+      description: '会社員の方はこちら',
     },
   ],
 };
