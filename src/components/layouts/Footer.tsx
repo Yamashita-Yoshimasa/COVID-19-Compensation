@@ -11,7 +11,15 @@ const Footer: FC<{}> = () => (
         <p className="p-skill__text -view" />
       </div>
       <p className="p-footer__copy -view">
-        <small>©︎ 2019 COVID-19.yamabaku.work</small>
+        <small>
+          ©︎ 2019{' '}
+          <a
+            className="p-footer__smallLink -view"
+            href="https://covid-19.yamabaku.work"
+          >
+            COVID-19.yamabaku.work
+          </a>
+        </small>
       </p>
     </div>
   </section>

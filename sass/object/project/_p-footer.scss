@@ -21,9 +21,16 @@
 
   &__copy{
     &.-view {
+      color: #fff;
       font-size: 1.2rem;
       margin-top: 20px;
       opacity: 0.5;
+    }
+  }
+
+  &__smallLink{
+    &.-view {
+      color: #fff;
     }
   }
 }

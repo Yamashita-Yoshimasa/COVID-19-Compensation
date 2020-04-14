@@ -185,9 +185,14 @@ li {
 }
 
 .p-footer__copy.-view {
+  color: #fff;
   font-size: 1.2rem;
   margin-top: 20px;
   opacity: 0.5;
+}
+
+.p-footer__smallLink.-view {
+  color: #fff;
 }
 
 /* introduction project */
@@ -296,7 +301,7 @@ li {
 
 .p-subsidy__item {
   margin: 20px auto 0 auto;
-  padding: 20px 0;
+  padding: 16px 0;
   width: 320px;
 }
 
