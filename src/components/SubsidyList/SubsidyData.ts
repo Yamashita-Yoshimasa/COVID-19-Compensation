@@ -24,8 +24,8 @@ export const SubsidyData: Subsidies = {
     subsidylist: [
       {
         id: 1,
-        name: '現在会社員向けの助成金はありません',
-        summary: '',
+        name: '準備中',
+        summary: '現在会社員向けの助成金はありません',
         source: [],
       },
     ],
