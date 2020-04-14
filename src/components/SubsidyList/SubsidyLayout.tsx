@@ -12,6 +12,7 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
   const [modalOpen1, setModal1] = useState(false);
   const [modalOpen2, setModal2] = useState(false);
   const [modalOpen3, setModal3] = useState(false);
+  const [modalOpen4, setModal4] = useState(false);
 
   interface Modal {
     [code: string]: {
@@ -36,6 +37,11 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
       modalOpen: modalOpen3,
       setTrue: setModal3,
       setFalse: setModal3,
+    },
+    modal4: {
+      modalOpen: modalOpen4,
+      setTrue: setModal4,
+      setFalse: setModal4,
     },
   };
 
@@ -80,7 +86,14 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
               size="small"
             >
               <Header icon="browser" content={item.name} />
-              <Modal.Content>{item.name}</Modal.Content>
+              <Modal.Content>
+                {item.summary.split('<br />').map(str => {
+                  return <p>{str}</p>;
+                })}
+                <p>
+                  情報元: <a href={item.source[0]}>{item.source[1]}</a>
+                </p>
+              </Modal.Content>
               <Modal.Actions>
                 <Button
                   color="green"
