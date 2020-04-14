@@ -13,6 +13,7 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
   const [modalOpen2, setModal2] = useState(false);
   const [modalOpen3, setModal3] = useState(false);
   const [modalOpen4, setModal4] = useState(false);
+  const [modalOpen5, setModal5] = useState(false);
 
   interface Modal {
     [code: string]: {
@@ -43,6 +44,11 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
       setTrue: setModal4,
       setFalse: setModal4,
     },
+    modal5: {
+      modalOpen: modalOpen5,
+      setTrue: setModal5,
+      setFalse: setModal5,
+    },
   };
 
   const handleOpen = (i: string) => ModalStatus[i].setTrue(true);
@@ -64,6 +70,7 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
         <ul className="p-subsidy__list">
           {subsidylist.map(item => (
             <Modal
+              className="p-modal -view"
               key={item.id}
               trigger={
                 <li>
@@ -75,6 +82,8 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
                     type="button"
                   >
                     {item.name}
+                    <br />
+                    <span className="p-modal__term -view">{item.term}</span>
                   </button>
                 </li>
               }
@@ -88,9 +97,13 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
               <Header icon="browser" content={item.name} />
               <Modal.Content>
                 {item.summary.split('<br />').map(str => {
-                  return <p>{str}</p>;
+                  return (
+                    <p className="p-modal__text -view" key={str}>
+                      {str}
+                    </p>
+                  );
                 })}
-                <p>
+                <p className="p-modal__text -view">
                   情報元: <a href={item.source[0]}>{item.source[1]}</a>
                 </p>
               </Modal.Content>
