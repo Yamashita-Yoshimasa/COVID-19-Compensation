@@ -71,7 +71,7 @@ const Subsidy: FC<SubsidyProps> = ({
             subsidyhistory.push('/');
           }}
         >
-          <Icon name="home" />ホ ー ム へ
+          <Icon name="home" />ホ ー ム
         </Button>
         <div className="p-subsidy__wrapper">
           <div className="p-subsidy__jobBox">
