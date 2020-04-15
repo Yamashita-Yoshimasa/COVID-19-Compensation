@@ -1,7 +1,7 @@
 .l-intro {
   @include media(tab-min) {
     height: calc(100vh - 296.5px);
-    min-height: 506px;
+    min-height: 440px;
   }
 
   @include media(sp) {

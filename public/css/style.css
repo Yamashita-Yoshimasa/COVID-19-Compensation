@@ -1,7 +1,6 @@
 /**
  *   Founsdation
  * ======================== */
-
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
@@ -121,11 +120,9 @@ input, select {
 }
 
 /* breakpoints */
-
 /**
  *   Laysout
  * ======================== */
-
 /* bar-width layout */
 .l-barWidth {
   margin: 0 auto;
@@ -133,7 +130,6 @@ input, select {
 }
 
 /* footer layout */
-
 /* MY SKILL */
 .l-footer {
   background-color: #3b3d40;
@@ -144,7 +140,7 @@ input, select {
 @media (min-width: 1001px) {
   .l-intro {
     height: calc(100vh - 296.5px);
-    min-height: 506px;
+    min-height: 440px;
   }
 }
 
@@ -163,11 +159,8 @@ input, select {
 /**
  *   Object1
  * ======================= */
-
 /* Conponent -------------- */
-
 /* Project -------------- */
-
 /* footer */
 .p-footer.-view {
   color: #fff;
@@ -231,6 +224,7 @@ input, select {
   justify-content: space-around;
   margin: 0 auto;
   max-width: 1024px;
+  min-height: 300px;
 }
 
 @media (max-width: 1000px) {
@@ -243,7 +237,7 @@ input, select {
 
 @media (min-width: 1001px) {
   .p-intro .p-intro__cardBox {
-    height: calc(100vh - 388px);
+    height: calc(100vh - 422px);
     margin-top: -10px;
   }
 }
@@ -261,7 +255,6 @@ input, select {
   .p-intro__link {
     width: 70%;
   }
-
   .p-intro__link:not(:first-child) {
     margin-top: 40px;
   }
@@ -277,7 +270,6 @@ input, select {
   .p-modal .header .content {
     font-size: 24px;
   }
-
   .p-modal__text.-view {
     font-size: 20px;
   }
