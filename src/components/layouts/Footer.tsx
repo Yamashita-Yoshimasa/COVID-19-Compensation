@@ -6,12 +6,9 @@ const Footer: FC<{}> = () => (
     <div className="p-footer -view">
       <p className="p-footer__title -view">
         {' '}
-        <a
-          className="p-footer__link -view"
-          href="https://covid-19.yamabaku.work"
-        >
+        <Link to="/" className="p-footer__link -view">
           COVID-19 Subsidies
-        </a>
+        </Link>
       </p>
       <div className="p-footer__contents">
         <p className="p-footer__privacy">
