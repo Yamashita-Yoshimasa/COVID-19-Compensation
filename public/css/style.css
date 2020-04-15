@@ -1,6 +1,7 @@
 /**
  *   Founsdation
  * ======================== */
+
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
@@ -18,16 +19,29 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
 }
 
 body {
+  font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -44,18 +58,23 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote::before, blockquote::after,
+q::before, q::after {
   content: '';
   content: none;
 }
 
 a {
+  background: transparent;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  font-size: 100%;
+  text-decoration: none;
   vertical-align: baseline;
-  background: transparent;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* change colours to suit your needs */
@@ -89,10 +108,10 @@ table {
 
 /* change border colour to suit your needs */
 hr {
+  border: 0;
+  border-top: 1px solid #ccc;
   display: block;
   height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -101,35 +120,12 @@ input, select {
   vertical-align: middle;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
 /* breakpoints */
+
 /**
  *   Laysout
  * ======================== */
+
 /* bar-width layout */
 .l-barWidth {
   margin: 0 auto;
@@ -137,6 +133,7 @@ li {
 }
 
 /* footer layout */
+
 /* MY SKILL */
 .l-footer {
   background-color: #3b3d40;
@@ -166,8 +163,11 @@ li {
 /**
  *   Object1
  * ======================= */
+
 /* Conponent -------------- */
+
 /* Project -------------- */
+
 /* footer */
 .p-footer.-view {
   color: #fff;
@@ -261,6 +261,7 @@ li {
   .p-intro__link {
     width: 70%;
   }
+
   .p-intro__link:not(:first-child) {
     margin-top: 40px;
   }
@@ -276,6 +277,7 @@ li {
   .p-modal .header .content {
     font-size: 24px;
   }
+
   .p-modal__text.-view {
     font-size: 20px;
   }
