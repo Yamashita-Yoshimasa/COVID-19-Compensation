@@ -3,6 +3,9 @@ steps:
     args: ['install']
 
   - name: 'gcr.io/cloud-builders/yarn'
+    args: ['lint']
+
+  - name: 'gcr.io/cloud-builders/yarn'
     args: ['build']
 
   - name: 'gcr.io/cloud-builders/gcloud'
