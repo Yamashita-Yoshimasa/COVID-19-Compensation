@@ -7,12 +7,7 @@ const Introduction: FC<{}> = () => (
   <div className="l-intro">
     <div className="p-intro">
       <Message>
-<<<<<<< HEAD
         <Message.Header>新型コロナウイルスの助成金を確認！</Message.Header>
-=======
-        <Message.Header>新型コロナウイルスの補償を確認できます</Message.Header>
-
->>>>>>> e0e47d82308516522dd1bf02f403f43d44cd52ed
         <p className="p-intro__text">
           現在、国は新型コロナウイルスによる損害への補償をいくつか発表しています。
           <br />

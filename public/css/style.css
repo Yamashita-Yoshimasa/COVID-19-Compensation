@@ -1,6 +1,7 @@
 /**
  *   Founsdation
  * ======================== */
+
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
@@ -120,9 +121,11 @@ input, select {
 }
 
 /* breakpoints */
+
 /**
  *   Laysout
  * ======================== */
+
 /* bar-width layout */
 .l-barWidth {
   margin: 0 auto;
@@ -130,6 +133,7 @@ input, select {
 }
 
 /* footer layout */
+
 /* MY SKILL */
 .l-footer {
   background-color: #3b3d40;
@@ -159,8 +163,11 @@ input, select {
 /**
  *   Object1
  * ======================= */
+
 /* Conponent -------------- */
+
 /* Project -------------- */
+
 /* footer */
 .p-footer.-view {
   color: #fff;
@@ -255,6 +262,7 @@ input, select {
   .p-intro__link {
     width: 70%;
   }
+
   .p-intro__link:not(:first-child) {
     margin-top: 40px;
   }
@@ -270,6 +278,7 @@ input, select {
   .p-modal .header .content {
     font-size: 24px;
   }
+
   .p-modal__text.-view {
     font-size: 20px;
   }
