@@ -1,0 +1,267 @@
+/**
+ *   Founsdation
+ * ======================== */
+
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+a {
+  background: transparent;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* breakpoints */
+
+/**
+ *   Laysout
+ * ======================== */
+
+/* bar-width layout */
+.l-barWidth {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* footer layout */
+
+/* MY SKILL */
+.l-footer {
+  background-color: #3b3d40;
+  font-family: Hiragino Sans, 'Noto Sans JP', sans-serif;
+  padding: 64px 30px 30px 30px;
+}
+
+@media (max-width: 1000px) {
+  .l-footer {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .l-intro {
+    height: calc(100vh - 261.5px);
+  }
+}
+
+/**
+ *   Object1
+ * ======================= */
+
+/* Conponent -------------- */
+
+/* Project -------------- */
+
+/* footer */
+.p-footer {
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.p-footer__twitter {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.p-footer__twitter--text {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.p-footer__copy {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+/* introduction project */
+.p-intro {
+  text-align: center;
+}
+
+.p-intro__text {
+  display: inline-block;
+  text-align: left;
+}
+
+.p-intro__button.-view {
+  font-size: 2rem;
+}
+
+.p-intro .p-intro__cardBox {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+@media (max-width: 1000px) {
+  .p-intro .p-intro__cardBox {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .p-intro .p-intro__cardBox {
+    height: calc(100vh - 388px);
+    margin-top: -10px;
+  }
+}
+
+.p-intro .p-intro__cardBox .p-intro__card {
+  margin: 0;
+}
+
+.p-intro__link {
+  display: block;
+  max-width: 280px;
+}
+
+@media (max-width: 1000px) {
+  .p-intro__link {
+    width: 70%;
+  }
+
+  .p-intro__link:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1440px) {
+  .p-intro__link {
+    max-width: 220px;
+  }
+}
+
+.p-subsidy__jobBox {
+  display: flex;
+}
+
+.p-subsidy__jobImage {
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
+/* Utillity -------------- */
