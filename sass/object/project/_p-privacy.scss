@@ -1,0 +1,19 @@
+.p-privacy {
+  & .message .header:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  & .message {
+    min-height: 625px;
+
+    @include media(sp-min) {
+      height: calc(100vh - 296.5px);
+    }
+  }
+
+  &__textBox {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+}
+

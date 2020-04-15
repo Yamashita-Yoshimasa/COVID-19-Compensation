@@ -1,0 +1,19 @@
+.p-modal {
+  @include media (pc-min) {
+    & .header .content {
+      font-size: 24px;
+    }
+
+    &__text {
+      &.-view {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__term {
+    &.-view {
+      font-size: 16px;
+    }
+  }
+}

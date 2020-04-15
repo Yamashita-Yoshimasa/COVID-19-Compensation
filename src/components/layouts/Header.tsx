@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -26,7 +27,9 @@ const Header: FC<{}> = () => {
         <div className="l-barWidth" style={style}>
           <Toolbar variant="dense">
             <Typography variant="h6" color="inherit">
-              COVID-19 Compensation
+              <Link to="/" className="p-header__link -view">
+                COVID-19 Subsidies
+              </Link>
             </Typography>
           </Toolbar>
         </div>

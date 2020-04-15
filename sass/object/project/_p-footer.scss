@@ -1,20 +1,48 @@
 /* footer */
 .p-footer{
-	color: #fff;
-	font-size: 1.25rem;
-	text-align: center;
-	&__twitter{
-		color: #fff;
-		font-size: 2.4rem;
-		&--text{
-			color: #fff;
-			font-size: 1.2rem;
-			margin-top: 5px;
-		}
-	}
-	&__copy{
-		margin-top: 20px;
-		font-size: 1.2rem;
-		opacity: 0.5;
-	}
+  &.-view {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  &__twitter{
+    color: #fff;
+    font-size: 2.4rem;
+
+    &--text{
+      &.-view {
+        color: #fff;
+        font-size: 1.2rem;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__copy{
+    &.-view {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      opacity: 0.5;
+    }
+  }
+
+  &__link{
+    &.-view {
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+
+  &__privacy{
+    margin-bottom: 10px;
+  }
+
+  &__privacyLink{
+    &.-view {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
 }
