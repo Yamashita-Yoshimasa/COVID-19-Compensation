@@ -8,6 +8,7 @@ const Introduction: FC<{}> = () => (
     <div className="p-intro">
       <Message>
         <Message.Header>新型コロナウイルスの補償を確認できます</Message.Header>
+
         <p className="p-intro__text">
           現在、国は新型コロナウイルスによる損害への補償をいくつか発表しています。
           <br />
