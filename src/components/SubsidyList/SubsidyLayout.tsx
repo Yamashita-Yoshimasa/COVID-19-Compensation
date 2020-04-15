@@ -6,9 +6,15 @@ interface SubsidyProps {
   image: string;
   job: string;
   subsidylist: SubsidyList[];
+  subsidyhistory: any; // eslint-disable-line @typescript-eslint/no-explicit-any
 }
 
-const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
+const Subsidy: FC<SubsidyProps> = ({
+  image,
+  job,
+  subsidylist,
+  subsidyhistory,
+}) => {
   const [modalOpen1, setModal1] = useState(false);
   const [modalOpen2, setModal2] = useState(false);
   const [modalOpen3, setModal3] = useState(false);
@@ -57,6 +63,16 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
   return (
     <div className="l-subsidy">
       <div className="p-subsidy">
+        <Button
+          className="p-subsidy__button"
+          basic
+          color="grey"
+          onClick={() => {
+            subsidyhistory.push('/');
+          }}
+        >
+          <Icon name="home" />ホ ー ム へ
+        </Button>
         <div className="p-subsidy__wrapper">
           <div className="p-subsidy__jobBox">
             <div
@@ -115,7 +131,7 @@ const Subsidy: FC<SubsidyProps> = ({ image, job, subsidylist }) => {
                   }}
                   inverted
                 >
-                  <Icon name="checkmark" /> Got it
+                  <Icon name="checkmark" /> 閉じる
                 </Button>
               </Modal.Actions>
             </Modal>

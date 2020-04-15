@@ -159,6 +159,7 @@ li {
 .l-subsidy {
   height: calc(100vh - 261.5px);
   min-height: 600px;
+  text-align: center;
 }
 
 /**
@@ -275,7 +276,18 @@ li {
 }
 
 .p-subsidy {
-  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 0 auto;
+  max-width: 320px;
+  position: relative;
+}
+
+.p-subsidy__button {
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 .p-subsidy__wrapper {
@@ -285,7 +297,7 @@ li {
 .p-subsidy__jobBox {
   align-items: center;
   display: flex;
-  margin-top: 24px;
+  margin-top: 48px;
 }
 
 .p-subsidy__jobImage {

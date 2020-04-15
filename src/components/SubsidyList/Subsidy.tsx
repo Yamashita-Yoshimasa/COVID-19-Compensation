@@ -7,7 +7,7 @@ import SubsidyLayout from 'components/SubsidyList/SubsidyLayout';
 
 type SubsidyProps = {} & RouteComponentProps<{ code: string }>;
 
-const Subsidy: FC<SubsidyProps> = ({ match }) => {
+const Subsidy: FC<SubsidyProps> = ({ match, history }) => {
   const codes = Object.keys(SubsidyData);
   const targetCode = match.params.code;
 
@@ -17,6 +17,7 @@ const Subsidy: FC<SubsidyProps> = ({ match }) => {
         image={SubsidyData[targetCode].image}
         job={SubsidyData[targetCode].job}
         subsidylist={SubsidyData[targetCode].subsidylist}
+        subsidyhistory={history}
       />
     </>
   ) : (
