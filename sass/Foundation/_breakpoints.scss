@@ -6,6 +6,8 @@ $breakpoints: (
   'pc': '(max-width: #{$layout-width-inner})',
   'tab-min':'(min-width: 1001px)',
   'pc-min':'(min-width: 1024px)',
+  'sp-min':'(min-width: 376px)',
+
 );
 
 @mixin media($breakpoint) {

@@ -34,4 +34,15 @@
       font-weight: 500;
     }
   }
+
+  &__privacy{
+    margin-bottom: 10px;
+  }
+
+  &__privacyLink{
+    &.-view {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
 }
