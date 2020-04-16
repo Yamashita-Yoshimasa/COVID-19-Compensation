@@ -8,7 +8,7 @@ const Privacy: FC<{}> = () => (
         <div className="p-privacy__textBox">
           <Message.Header>Privacy Policy</Message.Header>
           本Privacy{' '}
-          Policyは、https://covid-19.yamabaku.work（以下、「当サイト」とします。)の各種サービス（当サイトによる情報提供、各種お問合せの受付等）において、当サイトの訪問者（以下、「訪問者」とします。）の個人情報もしくはそれに準ずる情報を取り扱う際に、当サイトが遵守する方針を示したものです。
+          Policyは、https://covid-19.yamabaku.work（以下、「当サイト」とします。)の各種サービス（当サイトによる情報提供、各種お問合せの受付等）において、当サイトの訪問者の個人情報もしくはそれに準ずる情報を取り扱う際に、当サイトが遵守する方針を示したものです。
           <Message.Header> 基本方針</Message.Header>
           当サイトは、個人情報の重要性を認識し、個人情報を保護することが社会的責務であると考え、個人情報に関する法令を遵守します。
           <Message.Header>免責事項</Message.Header>
