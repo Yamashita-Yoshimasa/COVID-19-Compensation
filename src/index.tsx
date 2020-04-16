@@ -7,7 +7,6 @@ import 'semantic-ui-css/semantic.min.css';
 import App from 'App';
 import Header from 'components/layouts/Header';
 import Footer from 'components/layouts/Footer';
-import TwitterCard from 'images/card.png';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -20,7 +19,10 @@ ReactDOM.render(
         property="og:description"
         content=" 新型コロナウイルスに対する国の制度を確認！"
       />
-      <meta property="og:image" content={TwitterCard} />
+      <meta
+        property="og:image"
+        content="https://storage.cloud.google.com/covid-19-compensation.appspot.com/card.png?hl=ja"
+      />
     </Helmet>
     <Header />
     <App />
