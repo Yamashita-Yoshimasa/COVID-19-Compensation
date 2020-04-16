@@ -21,7 +21,7 @@ ReactDOM.render(
       />
       <meta
         property="og:image"
-        content="https://storage.cloud.google.com/covid-19-compensation.appspot.com/card.png?hl=ja"
+        content="https://storage.googleapis.com/covid-19-compensation.appspot.com/card.png"
       />
     </Helmet>
     <Header />
