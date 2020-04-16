@@ -28,7 +28,7 @@ const Header: FC<{}> = () => {
           <Toolbar variant="dense">
             <Typography variant="h6" color="inherit">
               <Link to="/" className="p-header__link -view">
-                COVID-19 Subsidies
+                COVID-19 Compensation
               </Link>
             </Typography>
           </Toolbar>

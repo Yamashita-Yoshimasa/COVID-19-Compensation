@@ -7,7 +7,7 @@ const Footer: FC<{}> = () => (
       <p className="p-footer__title -view">
         {' '}
         <Link to="/" className="p-footer__link -view">
-          COVID-19 Subsidies
+          COVID-19 Compensation
         </Link>
       </p>
       <div className="p-footer__contents">
