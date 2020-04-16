@@ -81,7 +81,7 @@ const Subsidy: FC<SubsidyProps> = ({
             />
             <p className="p-subsidy__jobName -view">{job}</p>
           </div>
-          <p className="p-subsidy__title -view">{`${job}向け助成金一覧`}</p>
+          <p className="p-subsidy__title -view">{`${job}向け補償一覧`}</p>
         </div>
         <ul className="p-subsidy__list">
           {subsidylist.map(item => (
