@@ -120,7 +120,10 @@ const Subsidy: FC<SubsidyProps> = ({
                   );
                 })}
                 <p className="p-modal__text -view">
-                  情報元: <a href={item.source[0]}>{item.source[1]}</a>
+                  情報元:
+                  <a href={item.source[0]}>
+                    {item.source[1]} <Icon name="external alternate" />
+                  </a>
                 </p>
               </Modal.Content>
               <Modal.Actions>
